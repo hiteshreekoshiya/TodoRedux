@@ -4,7 +4,7 @@ import createSagaMiddleware from 'redux-saga';
 import RootSaga from './RootSaga';
 
 const sagaMiddleware = createSagaMiddleware();
-
+// depricated
 const store = createStore(rootReducer, applyMiddleware(sagaMiddleware));
 
 sagaMiddleware.run(RootSaga);
